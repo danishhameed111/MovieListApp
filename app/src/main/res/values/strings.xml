@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyMovieListProject</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="overview">Overview:</string>
+    <string name="tagLine">Tagline:</string>
+    <string name="status">Status</string>
+    <string name="releaseDate">Release Date</string>
+    <string name="voteAverage">Vote Average</string>
+</resources>

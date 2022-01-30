@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/moviesBackground"
+        tools:context=".ui.MainActivity">
+
+        <Button
+            android:id="@+id/popular_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorSurfaceDark"
+            android:text="@string/popular"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/top_Rated_tab"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/top_Rated_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorSurfaceDark"
+            android:text="@string/top_rated"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/Now_Playing_tab"
+            app:layout_constraintStart_toEndOf="@id/popular_tab"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Now_Playing_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSurfaceDark"
+            android:text="@string/now_playing"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/top_Rated_tab"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_Rated_tab"
+            tools:listitem="@layout/item_list_movies_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
