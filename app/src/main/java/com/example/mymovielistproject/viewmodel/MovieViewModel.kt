@@ -12,7 +12,7 @@ class MovieViewModel(application: Application) : AndroidViewModel(application) {
         RepositoryData.initDatabase(application)
     }
 
-    fun getMovies(type : String, tBool :Int) : LiveData<List<Movies>>{
+    fun getMovies(type: String, tBool: Int): LiveData<List<Movies>> {
         return RepositoryData.getMovies(type, tBool)
     }
 
